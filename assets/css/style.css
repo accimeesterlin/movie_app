@@ -4,20 +4,7 @@ html {
 
 body {
     margin: 0;
-
 }
-
-
-.movie {
-    border-radius: 4px;
-    box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
-    cursor: pointer;
-}
-
-.movie img {
-    width: 100%;
-}
-
 
 
 section {
@@ -63,6 +50,7 @@ section .movie {
 }
 
 
+
 /* 
 section:nth-child(1) {
     background: #7be0ac;
@@ -79,20 +67,24 @@ section:nth-child(3) {
 .movie {
     /* padding: 0 20px; */
     transition: 250ms all;
-    width: 200px;
-
+    width: 300px;
 }
 
-
-.movie img {
-    width: 100%;
-    height: auto;
-}
 
 .movie:hover {
     margin-left: 0 40px;
     transform: scale(1.2);
     cursor: pointer;
+}
+
+.movie {
+    border-radius: 4px;
+    box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+.movie img {
+    width: 100%;
 }
 
 section a {
@@ -111,6 +103,10 @@ section a:hover {
     text-decoration: none;
 }
 
+
+.prev, .next {
+    cursor: pointer;
+}
 
 /* #next, #prev {
     top: 150px;

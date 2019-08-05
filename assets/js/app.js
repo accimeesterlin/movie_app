@@ -120,13 +120,14 @@ function displayMovieVideos(data) {
     const videoContent = document.createElement('div');
     const videos = data.results || [];
 
-    for (let i = 0; i < videos.length; i++) {
+    for (let i = 0; i < 4; i++) {
         const video = videos[i];
 
         const iframe = document.createElement('iframe');
         iframe.src = `http://www.youtube.com/embed/${video.key}`;
         iframe.width = 560;
         iframe.height = 315;
+        iframe.allowFullscreen = true;
 
         videoContent.appendChild(iframe);
         content.appendChild(videoContent);
@@ -242,11 +243,11 @@ function displayMovieContainer(section) {
 }
 
 // Initialize the search
-// searchUpcomingMovies();
-// searchPopularMovie();
-// getTopRatedMovies();
+searchUpcomingMovies();
+getTopRatedMovies();
+searchPopularMovie();
 getTrendingMovies();
-// searchMovie('Furious');
+searchMovie('Furious');
 
 
 
