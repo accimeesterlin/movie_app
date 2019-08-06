@@ -1,3 +1,5 @@
+// Initial Values
+const INITIAL_SEARCH_VALUE = 'spiderman';
 const log = console.log;
 
 // Selecting elements from the DOM
@@ -158,7 +160,7 @@ document.onclick = function (event) {
 }
 
 // Initialize the search
-searchMovie('spiderman');
+searchMovie(INITIAL_SEARCH_VALUE);
 searchUpcomingMovies();
 getTopRatedMovies();
 searchPopularMovie();
