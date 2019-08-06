@@ -132,7 +132,9 @@ searchButton.onclick = function (event) {
     event.preventDefault();
     const value = searchInput.value
 
+   if (value) {
     searchMovie(value);
+   }
     resetInput();
 }
 
